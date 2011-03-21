@@ -1,0 +1,458 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C3187293133768D400DF5FF7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3187292133768D400DF5FF7 /* UIKit.framework */; };
+		C3187295133768D400DF5FF7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3187294133768D400DF5FF7 /* Foundation.framework */; };
+		C3187297133768D400DF5FF7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3187296133768D400DF5FF7 /* CoreGraphics.framework */; };
+		C318729D133768D400DF5FF7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C318729B133768D400DF5FF7 /* InfoPlist.strings */; };
+		C31872A0133768D400DF5FF7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C318729F133768D400DF5FF7 /* main.m */; };
+		C31872A3133768D400DF5FF7 /* DSWebImageAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C31872A2133768D400DF5FF7 /* DSWebImageAppDelegate.m */; };
+		C31872A6133768D400DF5FF7 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = C31872A4133768D400DF5FF7 /* MainWindow.xib */; };
+		C31872A9133768D400DF5FF7 /* DSWebImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C31872A8133768D400DF5FF7 /* DSWebImageViewController.m */; };
+		C31872AC133768D400DF5FF7 /* DSWebImageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C31872AA133768D400DF5FF7 /* DSWebImageViewController.xib */; };
+		C31872B3133768D400DF5FF7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3187292133768D400DF5FF7 /* UIKit.framework */; };
+		C31872B4133768D400DF5FF7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3187294133768D400DF5FF7 /* Foundation.framework */; };
+		C31872B5133768D400DF5FF7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3187296133768D400DF5FF7 /* CoreGraphics.framework */; };
+		C31872BD133768D400DF5FF7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C31872BB133768D400DF5FF7 /* InfoPlist.strings */; };
+		C31872C0133768D400DF5FF7 /* DSWebImageTests.h in Resources */ = {isa = PBXBuildFile; fileRef = C31872BF133768D400DF5FF7 /* DSWebImageTests.h */; };
+		C31872C2133768D400DF5FF7 /* DSWebImageTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C31872C1133768D400DF5FF7 /* DSWebImageTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C31872B6133768D400DF5FF7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C3187285133768D400DF5FF7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C318728D133768D400DF5FF7;
+			remoteInfo = DSWebImage;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C318728E133768D400DF5FF7 /* DSWebImage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DSWebImage.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3187292133768D400DF5FF7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		C3187294133768D400DF5FF7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C3187296133768D400DF5FF7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		C318729A133768D400DF5FF7 /* DSWebImage-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DSWebImage-Info.plist"; sourceTree = "<group>"; };
+		C318729C133768D400DF5FF7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C318729E133768D400DF5FF7 /* DSWebImage-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DSWebImage-Prefix.pch"; sourceTree = "<group>"; };
+		C318729F133768D400DF5FF7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C31872A1133768D400DF5FF7 /* DSWebImageAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DSWebImageAppDelegate.h; sourceTree = "<group>"; };
+		C31872A2133768D400DF5FF7 /* DSWebImageAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DSWebImageAppDelegate.m; sourceTree = "<group>"; };
+		C31872A5133768D400DF5FF7 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		C31872A7133768D400DF5FF7 /* DSWebImageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DSWebImageViewController.h; sourceTree = "<group>"; };
+		C31872A8133768D400DF5FF7 /* DSWebImageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DSWebImageViewController.m; sourceTree = "<group>"; };
+		C31872AB133768D400DF5FF7 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/DSWebImageViewController.xib; sourceTree = "<group>"; };
+		C31872B2133768D400DF5FF7 /* DSWebImageTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DSWebImageTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C31872BA133768D400DF5FF7 /* DSWebImageTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DSWebImageTests-Info.plist"; sourceTree = "<group>"; };
+		C31872BC133768D400DF5FF7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C31872BE133768D400DF5FF7 /* DSWebImageTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DSWebImageTests-Prefix.pch"; sourceTree = "<group>"; };
+		C31872BF133768D400DF5FF7 /* DSWebImageTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DSWebImageTests.h; sourceTree = "<group>"; };
+		C31872C1133768D400DF5FF7 /* DSWebImageTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DSWebImageTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C318728B133768D400DF5FF7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3187293133768D400DF5FF7 /* UIKit.framework in Frameworks */,
+				C3187295133768D400DF5FF7 /* Foundation.framework in Frameworks */,
+				C3187297133768D400DF5FF7 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C31872AE133768D400DF5FF7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C31872B3133768D400DF5FF7 /* UIKit.framework in Frameworks */,
+				C31872B4133768D400DF5FF7 /* Foundation.framework in Frameworks */,
+				C31872B5133768D400DF5FF7 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C3187283133768D400DF5FF7 = {
+			isa = PBXGroup;
+			children = (
+				C3187298133768D400DF5FF7 /* DSWebImage */,
+				C31872B8133768D400DF5FF7 /* DSWebImageTests */,
+				C3187291133768D400DF5FF7 /* Frameworks */,
+				C318728F133768D400DF5FF7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C318728F133768D400DF5FF7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C318728E133768D400DF5FF7 /* DSWebImage.app */,
+				C31872B2133768D400DF5FF7 /* DSWebImageTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C3187291133768D400DF5FF7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C3187292133768D400DF5FF7 /* UIKit.framework */,
+				C3187294133768D400DF5FF7 /* Foundation.framework */,
+				C3187296133768D400DF5FF7 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C3187298133768D400DF5FF7 /* DSWebImage */ = {
+			isa = PBXGroup;
+			children = (
+				C31872A1133768D400DF5FF7 /* DSWebImageAppDelegate.h */,
+				C31872A2133768D400DF5FF7 /* DSWebImageAppDelegate.m */,
+				C31872A4133768D400DF5FF7 /* MainWindow.xib */,
+				C31872A7133768D400DF5FF7 /* DSWebImageViewController.h */,
+				C31872A8133768D400DF5FF7 /* DSWebImageViewController.m */,
+				C31872AA133768D400DF5FF7 /* DSWebImageViewController.xib */,
+				C3187299133768D400DF5FF7 /* Supporting Files */,
+			);
+			path = DSWebImage;
+			sourceTree = "<group>";
+		};
+		C3187299133768D400DF5FF7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C318729A133768D400DF5FF7 /* DSWebImage-Info.plist */,
+				C318729B133768D400DF5FF7 /* InfoPlist.strings */,
+				C318729E133768D400DF5FF7 /* DSWebImage-Prefix.pch */,
+				C318729F133768D400DF5FF7 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C31872B8133768D400DF5FF7 /* DSWebImageTests */ = {
+			isa = PBXGroup;
+			children = (
+				C31872BF133768D400DF5FF7 /* DSWebImageTests.h */,
+				C31872C1133768D400DF5FF7 /* DSWebImageTests.m */,
+				C31872B9133768D400DF5FF7 /* Supporting Files */,
+			);
+			path = DSWebImageTests;
+			sourceTree = "<group>";
+		};
+		C31872B9133768D400DF5FF7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C31872BA133768D400DF5FF7 /* DSWebImageTests-Info.plist */,
+				C31872BB133768D400DF5FF7 /* InfoPlist.strings */,
+				C31872BE133768D400DF5FF7 /* DSWebImageTests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C318728D133768D400DF5FF7 /* DSWebImage */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C31872C5133768D400DF5FF7 /* Build configuration list for PBXNativeTarget "DSWebImage" */;
+			buildPhases = (
+				C318728A133768D400DF5FF7 /* Sources */,
+				C318728B133768D400DF5FF7 /* Frameworks */,
+				C318728C133768D400DF5FF7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DSWebImage;
+			productName = DSWebImage;
+			productReference = C318728E133768D400DF5FF7 /* DSWebImage.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C31872B1133768D400DF5FF7 /* DSWebImageTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C31872C8133768D400DF5FF7 /* Build configuration list for PBXNativeTarget "DSWebImageTests" */;
+			buildPhases = (
+				C31872AD133768D400DF5FF7 /* Sources */,
+				C31872AE133768D400DF5FF7 /* Frameworks */,
+				C31872AF133768D400DF5FF7 /* Resources */,
+				C31872B0133768D400DF5FF7 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C31872B7133768D400DF5FF7 /* PBXTargetDependency */,
+			);
+			name = DSWebImageTests;
+			productName = DSWebImageTests;
+			productReference = C31872B2133768D400DF5FF7 /* DSWebImageTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C3187285133768D400DF5FF7 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C3187288133768D400DF5FF7 /* Build configuration list for PBXProject "DSWebImage" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C3187283133768D400DF5FF7;
+			productRefGroup = C318728F133768D400DF5FF7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C318728D133768D400DF5FF7 /* DSWebImage */,
+				C31872B1133768D400DF5FF7 /* DSWebImageTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C318728C133768D400DF5FF7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C318729D133768D400DF5FF7 /* InfoPlist.strings in Resources */,
+				C31872A6133768D400DF5FF7 /* MainWindow.xib in Resources */,
+				C31872AC133768D400DF5FF7 /* DSWebImageViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C31872AF133768D400DF5FF7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C31872BD133768D400DF5FF7 /* InfoPlist.strings in Resources */,
+				C31872C0133768D400DF5FF7 /* DSWebImageTests.h in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C31872B0133768D400DF5FF7 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C318728A133768D400DF5FF7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C31872A0133768D400DF5FF7 /* main.m in Sources */,
+				C31872A3133768D400DF5FF7 /* DSWebImageAppDelegate.m in Sources */,
+				C31872A9133768D400DF5FF7 /* DSWebImageViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C31872AD133768D400DF5FF7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C31872C2133768D400DF5FF7 /* DSWebImageTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C31872B7133768D400DF5FF7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C318728D133768D400DF5FF7 /* DSWebImage */;
+			targetProxy = C31872B6133768D400DF5FF7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C318729B133768D400DF5FF7 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C318729C133768D400DF5FF7 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		C31872A4133768D400DF5FF7 /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C31872A5133768D400DF5FF7 /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		C31872AA133768D400DF5FF7 /* DSWebImageViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C31872AB133768D400DF5FF7 /* en */,
+			);
+			name = DSWebImageViewController.xib;
+			sourceTree = "<group>";
+		};
+		C31872BB133768D400DF5FF7 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C31872BC133768D400DF5FF7 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C31872C3133768D400DF5FF7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C31872C4133768D400DF5FF7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		C31872C6133768D400DF5FF7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DSWebImage/DSWebImage-Prefix.pch";
+				INFOPLIST_FILE = "DSWebImage/DSWebImage-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		C31872C7133768D400DF5FF7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DSWebImage/DSWebImage-Prefix.pch";
+				INFOPLIST_FILE = "DSWebImage/DSWebImage-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		C31872C9133768D400DF5FF7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/DSWebImage.app/DSWebImage";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DSWebImageTests/DSWebImageTests-Prefix.pch";
+				INFOPLIST_FILE = "DSWebImageTests/DSWebImageTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		C31872CA133768D400DF5FF7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/DSWebImage.app/DSWebImage";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DSWebImageTests/DSWebImageTests-Prefix.pch";
+				INFOPLIST_FILE = "DSWebImageTests/DSWebImageTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C3187288133768D400DF5FF7 /* Build configuration list for PBXProject "DSWebImage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C31872C3133768D400DF5FF7 /* Debug */,
+				C31872C4133768D400DF5FF7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C31872C5133768D400DF5FF7 /* Build configuration list for PBXNativeTarget "DSWebImage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C31872C6133768D400DF5FF7 /* Debug */,
+				C31872C7133768D400DF5FF7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C31872C8133768D400DF5FF7 /* Build configuration list for PBXNativeTarget "DSWebImageTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C31872C9133768D400DF5FF7 /* Debug */,
+				C31872CA133768D400DF5FF7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C3187285133768D400DF5FF7 /* Project object */;
+}
