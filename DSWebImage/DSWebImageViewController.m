@@ -79,20 +79,33 @@
   [super viewDidLoad];
   NSString *urlStr = @"http://www.google.com/images/logos/ps_logo2.png";
   NSURL *url = [NSURL URLWithString:urlStr];
+  NSURL *url2 = [NSURL URLWithString:@"http://www.inakdesign.com/images06/icon-funny.gif"];
   DSWebImageManager *m = [[DSWebImageManager alloc] init];
   
   CGSize size = CGSizeMake(30,30);
   
   for (int i = 0; i < 10; i++) {
-    DSWebImage *image = [[[DSWebImage alloc] initWithURL:url] autorelease];
-    [image setFrame:
-     CGRectMake(0, size.height*i, size.width, size.height)];
-    [[self view] addSubview:image];
-    
+    DSWebImage *image = nil;
+    if (i%2) {
+      image = [[[DSWebImage alloc] initWithURL:url] autorelease];
+      [image setFrame:
+       CGRectMake(0, size.height*i, size.width, size.height)];
+      [[self view] addSubview:image];
+      
+    } else {
+      image = [[[DSWebImage alloc] initWithURL:url2] autorelease];
+      [image setFrame:
+       CGRectMake(0, size.height*i, size.width, size.height)];
+      [[self view] addSubview:image];      
+    }
     [m queueImage:image
       noConnectionImage:nil
       waitingForDownloadImage:[UIImage imageNamed:@"2.png"]];        
+    if (i%3 == 0) {
+      [image removeFromSuperview];
+    }
   }
+    
   
 }
 

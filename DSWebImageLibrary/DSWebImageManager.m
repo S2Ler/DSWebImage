@@ -20,6 +20,7 @@
 
 #pragma mark - private
 @interface DSWebImageManager(Private)
+- (void)cleanMemoryForUniqueKey:(id)anUniqueKey;
 @end
 
 @implementation DSWebImageManager
@@ -30,8 +31,14 @@
   [queue_ release];
   [cache_ release];
   [waitersImage_ release];
+  [noConnectionImages_ release];
   
   [super dealloc];    
+}
+
+- (void)cleanMemoryForUniqueKey:(id)anUniqueKey {
+  [noConnectionImages_ removeObjectForKey:anUniqueKey];
+  [waitersImage_ removeObjectForKey:anUniqueKey];
 }
 
 #pragma mark - init
@@ -42,6 +49,7 @@
     queue_ = [[DSWebImageQueue alloc] init];
     cache_ = [[DSWebImageCache alloc] init];
     waitersImage_ = [[NSMutableDictionary alloc] init];
+    noConnectionImages_ = [[NSMutableDictionary alloc] init];
   }
     
   return self;
@@ -59,6 +67,12 @@ waitingForDownloadImage:(UIImage *)aPlaceholder {
   } else {
     //   1.2 If there is no cached image - set aPlaceholder image to anImage
     [anImage setImage:aPlaceholder];
+    
+    if (aNoImagePlaceholder) {
+      [noConnectionImages_ setObject:aNoImagePlaceholder
+                              forKey:[anImage uniqueID]];
+    }
+    
     //   1.2.1 Make new download operation and begin download
     DSWebImageDownloadOperation *op 
     = [[DSWebImageDownloadOperation alloc] initWithURL:[anImage url]
@@ -68,19 +82,19 @@ waitingForDownloadImage:(UIImage *)aPlaceholder {
                       forKey:[anImage uniqueID]];
     [queue_ addOperation:op];
     [op release];
-    //   1.2.1.1 If connection broken - set aNoImagePlaceHolder to anImage
-    //   1.2.1.2 If donwload successed - set downloaded image to anImage    
   }   
 }
 
 - (void)removeFromWaitersForImage:(id<DSImageViewProtocol>)anImage {
-  [waitersImage_ removeObjectForKey:[anImage uniqueID]];
+  
+  [self cleanMemoryForUniqueKey:[anImage uniqueID]];
 }
 
 #pragma mark - DSWebImageDownloadOperationDelegate
 - (void)dsDownloadOperationDidEndWithImage:(UIImage *)anImage
                                     forURL:(NSURL *)anURL
                                   uniqueID:(id)anUniqueID {
+  //   1.2.1.2 If donwload successed - set downloaded image to anImage    
   id<DSImageViewProtocol> dsImage 
   = [waitersImage_ objectForKey:anUniqueID];
   
@@ -92,12 +106,24 @@ waitingForDownloadImage:(UIImage *)aPlaceholder {
   
   [cache_ saveImage:anImage
              forURL:anURL];
+  [self cleanMemoryForUniqueKey:anUniqueID];
 }
                                                            
 - (void)dsDownloadOperationDidEndWithError:(NSError *)anError
                                     forURL:(NSURL *)anURL
                                   uniqueID:(id)anUniqueID {
-#warning NOT IMPLEMENTED
+  //   1.2.1.1 If connection broken - set aNoImagePlaceHolder to anImage
+  id<DSImageViewProtocol> dsImage 
+  = [waitersImage_ objectForKey:anUniqueID];
+  
+  if (dsImage) {
+    UIImage *noConnectionImage = [noConnectionImages_ objectForKey:anUniqueID];
+                                  
+    [dsImage performSelectorOnMainThread:@selector(setImage:)
+                              withObject:noConnectionImage
+                           waitUntilDone:NO];
+    [self cleanMemoryForUniqueKey:anUniqueID];
+  }
 }
 
 @end

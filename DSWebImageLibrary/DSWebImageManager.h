@@ -30,7 +30,9 @@ DSWebImageDownloadOperationDelegate
   DSWebImageQueue *queue_;
   DSWebImageCache *cache_;
   
+  
   NSMutableDictionary *waitersImage_;
+  NSMutableDictionary *noConnectionImages_;
 }
 
 - (void)queueImage:(id<DSImageViewProtocol>)anImage

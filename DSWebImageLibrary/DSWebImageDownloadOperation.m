@@ -70,9 +70,15 @@
     if ([self isCancelled] == NO) {
       if (imageData) {
         UIImage *image = [UIImage imageWithData:imageData];
-        [delegate_ dsDownloadOperationDidEndWithImage:image
-                                               forURL:imageURL_
-                                             uniqueID:uniqueID_];
+        if (image) {
+          [delegate_ dsDownloadOperationDidEndWithImage:image
+                                                 forURL:imageURL_
+                                               uniqueID:uniqueID_];
+        } else {
+          [delegate_ dsDownloadOperationDidEndWithError:nil
+                                                 forURL:imageURL_
+                                               uniqueID:uniqueID_];          
+        }
       } else {
         [delegate_ dsDownloadOperationDidEndWithError:error
                                                forURL:imageURL_

@@ -23,6 +23,7 @@
 
 #pragma mark - memory
 - (void)dealloc {
+  [delegate_ removeFromWaitersForImage:self];
   [url_ release];
   
   [super dealloc];    
@@ -55,6 +56,13 @@
 
 - (id)uniqueID {
   return [NSNumber numberWithInt:[self hash]];
+}
+
+#pragma mark - view managment
+
+- (void)removeFromSuperview {
+  [delegate_ removeFromWaitersForImage:self];
+  [super removeFromSuperview];
 }
 
 @end
