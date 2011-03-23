@@ -13,7 +13,7 @@
 - (id)init {
   self = [super init];
   if (self) {
-    
+    [self setMaxConcurrentOperationCount:1];
   }
   return self;
 }

@@ -80,12 +80,20 @@
   NSString *urlStr = @"http://www.google.com/images/logos/ps_logo2.png";
   NSURL *url = [NSURL URLWithString:urlStr];
   DSWebImageManager *m = [[DSWebImageManager alloc] init];
-  DSWebImage *image = [[DSWebImage alloc] initWithURL:url];
-  [image setFrame:[[self img] frame]];
-  [[self view] addSubview:image];
-  [m queueImage:image
+  
+  CGSize size = CGSizeMake(30,30);
+  
+  for (int i = 0; i < 10; i++) {
+    DSWebImage *image = [[[DSWebImage alloc] initWithURL:url] autorelease];
+    [image setFrame:
+     CGRectMake(0, size.height*i, size.width, size.height)];
+    [[self view] addSubview:image];
+    
+    [m queueImage:image
       noConnectionImage:nil
-      waitingForDownloadImage:[UIImage imageNamed:@"2.png"]];
+      waitingForDownloadImage:[UIImage imageNamed:@"2.png"]];        
+  }
+  
 }
 
 #pragma mark - rotation support

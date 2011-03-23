@@ -11,7 +11,9 @@
 
 @protocol DSWebImageDownloadOperationDelegate <NSObject>
 - (void)dsDownloadOperationDidEndWithImage:(UIImage *)anImage
-                                    forURL:(NSURL *)anURL;
+                                    forURL:(NSURL *)anURL
+                                  uniqueID:(id)anUniqueID;
 - (void)dsDownloadOperationDidEndWithError:(NSError *)anError
-                                    forURL:(NSURL *)anURL;
+                                    forURL:(NSURL *)anURL
+                                  uniqueID:(id)anUniqueID;
 @end

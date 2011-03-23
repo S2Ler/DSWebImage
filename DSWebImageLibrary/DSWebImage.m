@@ -53,4 +53,8 @@
   delegate_ = aDelegate;
 }
 
+- (id)uniqueID {
+  return [NSNumber numberWithInt:[self hash]];
+}
+
 @end

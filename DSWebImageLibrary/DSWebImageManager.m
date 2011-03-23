@@ -62,24 +62,27 @@ waitingForDownloadImage:(UIImage *)aPlaceholder {
     //   1.2.1 Make new download operation and begin download
     DSWebImageDownloadOperation *op 
     = [[DSWebImageDownloadOperation alloc] initWithURL:[anImage url]
-                                              delegate:self];
+                                              delegate:self
+                                              uniqueID:[anImage uniqueID]];
     [waitersImage_ setObject:anImage
-                      forKey:[[anImage url] absoluteString]];
+                      forKey:[anImage uniqueID]];
     [queue_ addOperation:op];
+    [op release];
     //   1.2.1.1 If connection broken - set aNoImagePlaceHolder to anImage
     //   1.2.1.2 If donwload successed - set downloaded image to anImage    
   }   
 }
 
 - (void)removeFromWaitersForImage:(id<DSImageViewProtocol>)anImage {
-  [waitersImage_ removeObjectForKey:[[anImage url] absoluteString]];
+  [waitersImage_ removeObjectForKey:[anImage uniqueID]];
 }
 
 #pragma mark - DSWebImageDownloadOperationDelegate
 - (void)dsDownloadOperationDidEndWithImage:(UIImage *)anImage
-                                    forURL:(NSURL *)anURL {
+                                    forURL:(NSURL *)anURL
+                                  uniqueID:(id)anUniqueID {
   id<DSImageViewProtocol> dsImage 
-  = [waitersImage_ objectForKey:[anURL absoluteString]];
+  = [waitersImage_ objectForKey:anUniqueID];
   
   if (dsImage) {
     [dsImage performSelectorOnMainThread:@selector(setImage:)
@@ -92,7 +95,8 @@ waitingForDownloadImage:(UIImage *)aPlaceholder {
 }
                                                            
 - (void)dsDownloadOperationDidEndWithError:(NSError *)anError
-                                    forURL:(NSURL *)anURL {
+                                    forURL:(NSURL *)anURL
+                                  uniqueID:(id)anUniqueID {
 #warning NOT IMPLEMENTED
 }
 

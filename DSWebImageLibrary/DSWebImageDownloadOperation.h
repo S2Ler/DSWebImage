@@ -19,10 +19,13 @@
   
   /** week reference */
   id<DSWebImageDownloadOperationDelegate> delegate_;
+  
+  id uniqueID_;
 }
 
 /** \param anImageURL is copied */
 - (id)initWithURL:(NSURL *)anImageURL
-         delegate:(id<DSWebImageDownloadOperationDelegate>)aDelegate;
+         delegate:(id<DSWebImageDownloadOperationDelegate>)aDelegate
+         uniqueID:(id)anUniqueID;
 
 @end

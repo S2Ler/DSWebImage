@@ -34,17 +34,21 @@
   [imageURL_ release];
   [imageData_ release];
   
+  [uniqueID_ release];
+  
   [super dealloc];
 }
 
 #pragma mark - init
 - (id)initWithURL:(NSURL *)anImageURL
-         delegate:(id<DSWebImageDownloadOperationDelegate>)aDelegate {
+         delegate:(id<DSWebImageDownloadOperationDelegate>)aDelegate
+         uniqueID:(id)anUniqueID {
   self = [super init];
   
   if (self) {
     imageURL_ = [anImageURL copy];
     delegate_ = aDelegate;
+    uniqueID_ = [anUniqueID retain];
   }
   
   return self;
@@ -52,7 +56,7 @@
 
 - (void)main {
   NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];
-  
+  NSLog(@"Start queue");
   if ([self isCancelled] == NO) {
     NSURLRequest *request = [[NSURLRequest alloc] initWithURL:imageURL_];    
         
@@ -67,10 +71,12 @@
       if (imageData) {
         UIImage *image = [UIImage imageWithData:imageData];
         [delegate_ dsDownloadOperationDidEndWithImage:image
-                                               forURL:imageURL_];
+                                               forURL:imageURL_
+                                             uniqueID:uniqueID_];
       } else {
         [delegate_ dsDownloadOperationDidEndWithError:error
-                                               forURL:imageURL_];
+                                               forURL:imageURL_
+                                             uniqueID:uniqueID_];
       }
     } 
   }

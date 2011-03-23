@@ -20,4 +20,9 @@
 
 - (void)setDelegate:(id<DSImageViewDelegate>)aDelegate;
 
+- (void)performSelectorOnMainThread:(SEL)anSelector
+                         withObject:(id)anObject
+                      waitUntilDone:(BOOL)wait;
+
+- (id)uniqueID;
 @end
