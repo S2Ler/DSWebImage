@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C30EAEC81338F17700BE3709 /* DSWebImageDownloadOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = C30EAEC71338F17700BE3709 /* DSWebImageDownloadOperation.m */; };
+		C30EAEC91338F17700BE3709 /* DSWebImageDownloadOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = C30EAEC71338F17700BE3709 /* DSWebImageDownloadOperation.m */; };
 		C3187293133768D400DF5FF7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3187292133768D400DF5FF7 /* UIKit.framework */; };
 		C3187295133768D400DF5FF7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3187294133768D400DF5FF7 /* Foundation.framework */; };
 		C3187297133768D400DF5FF7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3187296133768D400DF5FF7 /* CoreGraphics.framework */; };
@@ -22,6 +24,14 @@
 		C31872BD133768D400DF5FF7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C31872BB133768D400DF5FF7 /* InfoPlist.strings */; };
 		C31872C0133768D400DF5FF7 /* DSWebImageTests.h in Resources */ = {isa = PBXBuildFile; fileRef = C31872BF133768D400DF5FF7 /* DSWebImageTests.h */; };
 		C31872C2133768D400DF5FF7 /* DSWebImageTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C31872C1133768D400DF5FF7 /* DSWebImageTests.m */; };
+		C31872D713376D6600DF5FF7 /* DSWebImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C31872D613376D6600DF5FF7 /* DSWebImageManager.m */; };
+		C31872D813376D6600DF5FF7 /* DSWebImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C31872D613376D6600DF5FF7 /* DSWebImageManager.m */; };
+		C38F169B133A21D500CA55F8 /* DSWebImageQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = C38F169A133A21D500CA55F8 /* DSWebImageQueue.m */; };
+		C38F169C133A21D500CA55F8 /* DSWebImageQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = C38F169A133A21D500CA55F8 /* DSWebImageQueue.m */; };
+		C38F16A5133A3DD000CA55F8 /* DSWebImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = C38F16A4133A3DCF00CA55F8 /* DSWebImageCache.m */; };
+		C38F16A6133A3DD000CA55F8 /* DSWebImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = C38F16A4133A3DCF00CA55F8 /* DSWebImageCache.m */; };
+		C38F16A9133A448200CA55F8 /* DSWebImage.m in Sources */ = {isa = PBXBuildFile; fileRef = C38F16A8133A448100CA55F8 /* DSWebImage.m */; };
+		C38F16AB133A461400CA55F8 /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = C38F16AA133A461400CA55F8 /* 2.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +45,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C30EAEC41338E90600BE3709 /* DSWebImageDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSWebImageDelegate.h; sourceTree = "<group>"; };
+		C30EAEC61338F17700BE3709 /* DSWebImageDownloadOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSWebImageDownloadOperation.h; sourceTree = "<group>"; };
+		C30EAEC71338F17700BE3709 /* DSWebImageDownloadOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSWebImageDownloadOperation.m; sourceTree = "<group>"; };
 		C318728E133768D400DF5FF7 /* DSWebImage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DSWebImage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3187292133768D400DF5FF7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		C3187294133768D400DF5FF7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -55,6 +68,17 @@
 		C31872BE133768D400DF5FF7 /* DSWebImageTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DSWebImageTests-Prefix.pch"; sourceTree = "<group>"; };
 		C31872BF133768D400DF5FF7 /* DSWebImageTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DSWebImageTests.h; sourceTree = "<group>"; };
 		C31872C1133768D400DF5FF7 /* DSWebImageTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DSWebImageTests.m; sourceTree = "<group>"; };
+		C31872D513376D6600DF5FF7 /* DSWebImageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSWebImageManager.h; sourceTree = "<group>"; };
+		C31872D613376D6600DF5FF7 /* DSWebImageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSWebImageManager.m; sourceTree = "<group>"; };
+		C31872D913376DE500DF5FF7 /* DSImageViewProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSImageViewProtocol.h; sourceTree = "<group>"; };
+		C38F1699133A21D500CA55F8 /* DSWebImageQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSWebImageQueue.h; sourceTree = "<group>"; };
+		C38F169A133A21D500CA55F8 /* DSWebImageQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSWebImageQueue.m; sourceTree = "<group>"; };
+		C38F16A3133A3DCF00CA55F8 /* DSWebImageCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSWebImageCache.h; sourceTree = "<group>"; };
+		C38F16A4133A3DCF00CA55F8 /* DSWebImageCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSWebImageCache.m; sourceTree = "<group>"; };
+		C38F16A7133A448000CA55F8 /* DSWebImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSWebImage.h; sourceTree = "<group>"; };
+		C38F16A8133A448100CA55F8 /* DSWebImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSWebImage.m; sourceTree = "<group>"; };
+		C38F16AA133A461400CA55F8 /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 2.png; path = ../../../Stonewater/REPOS/aghergheta.stonewater2/2.png; sourceTree = "<group>"; };
+		C3EA00E2133A034600C642FC /* DSWebImageDownloadOperationDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSWebImageDownloadOperationDelegate.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +108,7 @@
 		C3187283133768D400DF5FF7 = {
 			isa = PBXGroup;
 			children = (
+				C31872D413376A5600DF5FF7 /* DSWebImageLibrary */,
 				C3187298133768D400DF5FF7 /* DSWebImage */,
 				C31872B8133768D400DF5FF7 /* DSWebImageTests */,
 				C3187291133768D400DF5FF7 /* Frameworks */,
@@ -127,6 +152,7 @@
 		C3187299133768D400DF5FF7 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				C38F16AA133A461400CA55F8 /* 2.png */,
 				C318729A133768D400DF5FF7 /* DSWebImage-Info.plist */,
 				C318729B133768D400DF5FF7 /* InfoPlist.strings */,
 				C318729E133768D400DF5FF7 /* DSWebImage-Prefix.pch */,
@@ -153,6 +179,26 @@
 				C31872BE133768D400DF5FF7 /* DSWebImageTests-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C31872D413376A5600DF5FF7 /* DSWebImageLibrary */ = {
+			isa = PBXGroup;
+			children = (
+				C31872D513376D6600DF5FF7 /* DSWebImageManager.h */,
+				C31872D613376D6600DF5FF7 /* DSWebImageManager.m */,
+				C31872D913376DE500DF5FF7 /* DSImageViewProtocol.h */,
+				C30EAEC41338E90600BE3709 /* DSWebImageDelegate.h */,
+				C30EAEC61338F17700BE3709 /* DSWebImageDownloadOperation.h */,
+				C30EAEC71338F17700BE3709 /* DSWebImageDownloadOperation.m */,
+				C3EA00E2133A034600C642FC /* DSWebImageDownloadOperationDelegate.h */,
+				C38F1699133A21D500CA55F8 /* DSWebImageQueue.h */,
+				C38F169A133A21D500CA55F8 /* DSWebImageQueue.m */,
+				C38F16A3133A3DCF00CA55F8 /* DSWebImageCache.h */,
+				C38F16A4133A3DCF00CA55F8 /* DSWebImageCache.m */,
+				C38F16A7133A448000CA55F8 /* DSWebImage.h */,
+				C38F16A8133A448100CA55F8 /* DSWebImage.m */,
+			);
+			path = DSWebImageLibrary;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -225,6 +271,7 @@
 				C318729D133768D400DF5FF7 /* InfoPlist.strings in Resources */,
 				C31872A6133768D400DF5FF7 /* MainWindow.xib in Resources */,
 				C31872AC133768D400DF5FF7 /* DSWebImageViewController.xib in Resources */,
+				C38F16AB133A461400CA55F8 /* 2.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,6 +310,11 @@
 				C31872A0133768D400DF5FF7 /* main.m in Sources */,
 				C31872A3133768D400DF5FF7 /* DSWebImageAppDelegate.m in Sources */,
 				C31872A9133768D400DF5FF7 /* DSWebImageViewController.m in Sources */,
+				C31872D713376D6600DF5FF7 /* DSWebImageManager.m in Sources */,
+				C30EAEC81338F17700BE3709 /* DSWebImageDownloadOperation.m in Sources */,
+				C38F169B133A21D500CA55F8 /* DSWebImageQueue.m in Sources */,
+				C38F16A5133A3DD000CA55F8 /* DSWebImageCache.m in Sources */,
+				C38F16A9133A448200CA55F8 /* DSWebImage.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,6 +323,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				C31872C2133768D400DF5FF7 /* DSWebImageTests.m in Sources */,
+				C31872D813376D6600DF5FF7 /* DSWebImageManager.m in Sources */,
+				C30EAEC91338F17700BE3709 /* DSWebImageDownloadOperation.m in Sources */,
+				C38F169C133A21D500CA55F8 /* DSWebImageQueue.m in Sources */,
+				C38F16A6133A3DD000CA55F8 /* DSWebImageCache.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -326,13 +382,16 @@
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_ENABLE_CPP_RTTI = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				RUN_CLANG_STATIC_ANALYZER = YES;
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -343,11 +402,14 @@
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_ENABLE_CPP_RTTI = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				RUN_CLANG_STATIC_ANALYZER = YES;
 				SDKROOT = iphoneos;
 			};
 			name = Release;
@@ -361,6 +423,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DSWebImage/DSWebImage-Prefix.pch";
 				INFOPLIST_FILE = "DSWebImage/DSWebImage-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -374,6 +437,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DSWebImage/DSWebImage-Prefix.pch";
 				INFOPLIST_FILE = "DSWebImage/DSWebImage-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				VALIDATE_PRODUCT = YES;
 				WRAPPER_EXTENSION = app;
@@ -443,6 +507,7 @@
 				C31872C7133768D400DF5FF7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C31872C8133768D400DF5FF7 /* Build configuration list for PBXNativeTarget "DSWebImageTests" */ = {
 			isa = XCConfigurationList;
@@ -451,6 +516,7 @@
 				C31872CA133768D400DF5FF7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

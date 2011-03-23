@@ -7,9 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+@class DSWebImage;
 
-@interface DSWebImageViewController : UIViewController {
+@interface DSWebImageViewController : UIViewController
+{
     
+  DSWebImage *img;
 }
+@property (nonatomic, retain) IBOutlet DSWebImage *img;
 
 @end
